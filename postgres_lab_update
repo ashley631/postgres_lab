@@ -8,7 +8,7 @@ SQL Lab: Ashley Hill
 
 4. SELECT * FROM orders LIMIT 100;
 
-5. SELECT * FROM customers where postal_code in (‘1010’, ‘3012’, ‘12209’, ‘05023’);
+5. SELECT * FROM customers where postal_code in('1010', '3012', '12209', '05023');
 
 6. SELECT ship_region FROM orders WHERE ship_region IS NOT NULL;
 
@@ -36,11 +36,12 @@ VALUES (123, 'Ford', 'Michele', 'CEO', '123 Ford Dr.', 'Detroit', 'Michigan', 'N
 	
 
 Bonus: 
-1. SELECT orders.customer_ID, Customers.Customer_ID from Orders inner join Customers ON orders.customer_ID=Customers.Customer_ID;
+1. 
+ SELECT orders.customer_ID, Customers.Customer_ID from Orders inner join Customers ON orders.customer_ID=Customers.Customer_ID;
 
  SELECT orders.customer_ID, Customers.Customer_ID from Orders left join Customers ON orders.customer_ID=Customers.Customer_ID;
 
-SELECT orders.customer_ID, Customers.Customer_ID from Orders right join Customers ON orders.customer_ID=Customers.Customer_ID;
+ SELECT orders.customer_ID, Customers.Customer_ID from Orders right join Customers ON orders.customer_ID=Customers.Customer_ID;
 
 2. SELECT first_name FROM employees WHERE reports_to is NULL;
 
