@@ -32,7 +32,7 @@ VALUES (123, 'Ford', 'Michele', 'CEO', '123 Ford Dr.', 'Detroit', 'Michigan', 'N
 	SELECT MAX (quantity) FROM order_details GROUP BY order_id;
 	SELECT AVG(quantity)FROM order_details GROUP BY order_id;
 
-13. SELECT orders.customerID where CustomerID = 10290;
+13. SELECT order_ID FROM orders where order_ID = 10290;
 	
 
 Bonus: 
